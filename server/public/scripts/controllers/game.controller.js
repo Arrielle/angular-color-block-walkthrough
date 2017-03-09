@@ -3,8 +3,10 @@ colorBlocks.controller('GameController', ['DataFactory', function(DataFactory) {
 console.log('game controller running');
 
 var self = this;
+// self.color shelps us get from the controller to the DOM
+//DataFactory.colorArray helps us get something from the DataFactory
 self.colors = DataFactory.colorArray;
-// self.colors = ['red', 'blue', 'magenta', 'green', 'pink'];
+// self.colors = DataFactory.colorArray = ['red', 'blue', 'magenta', 'green', 'pink'];
 
 console.log(self.colors);
 
